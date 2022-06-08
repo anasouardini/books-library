@@ -1,4 +1,4 @@
-CommitMsg = "first commit"
+CommitMsg = "testing a makefile"
 
 all:
 	echo "choose: install/commit"
