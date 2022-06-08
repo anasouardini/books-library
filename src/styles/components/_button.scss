@@ -1,0 +1,11 @@
+@use "../abstracts/" as vars;
+
+button{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 0;
+    outline: none;
+    background: vars.$main-clr;
+    color: #DDD;
+    cursor: pointer;
+}

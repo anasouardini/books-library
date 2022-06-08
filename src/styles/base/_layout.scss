@@ -2,3 +2,59 @@
 ================ CHUNK: BASE/LAYOUT
 ===========================================*/
 @use "../abstracts/" as vars;
+
+
+.controls{
+    background: vars.$main-clr;
+    padding: 20px 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    
+    > div{
+        flex-grow: 1;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, min-max(150px, 1fr));
+        gap: 20px;
+        margin-bottom: 20px;
+
+        input{
+            height: 35px;
+            padding: 10px;
+        }
+
+        button{
+            color: #FFF;
+            border: 1px solid #FFF;
+        }
+
+    }
+}
+
+.books{
+    padding: 20px 2rem;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, 250px);
+
+    .book{
+        display: flex;
+        flex-direction: column;
+
+        .cover{
+            margin-bottom: 25px;
+        }
+
+        h3, p{
+            margin-bottom: 20px;
+        }
+
+        button{
+            margin-top: 20px;
+            width: 100%;
+            margin-top: auto;
+        }
+    }
+}
+
+
